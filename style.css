@@ -53,16 +53,26 @@ body {
   margin: 50px auto;
 }
 
+@media screen and (max-width: 800px) 
+  .header {
+    text-align: left;
+    width: 100%;
+    margin: 0px auto;
+  }
+
 #categoryGrid {
   margin: 0px 5%;
   display: grid;
-  padding-top: 2%;
   padding-bottom: 5%;
   grid-template-rows: 33% 33% 33% 33%;
   grid-template-columns: 1fr 1fr 1fr;
   "UXUI Technical Portfo"
   ;
 }
+@media screen and (max-width: 800px) {
+  #categoryGrid {
+    display: inline-block;
+  } }
 
 .UXUI {
   grid-area: UXUI;
@@ -81,6 +91,14 @@ body {
   display: grid;
   align-content: top;
 }
+@media screen and (max-width: 800px) {
+  .categoryGridArea {
+    margin: 5px;
+    cursor: pointer;
+    display: inline-block;
+    align-content: top;
+    padding-bottom: 20px;
+  } }
 
 #Technical {
   background-position: left;
@@ -121,6 +139,16 @@ h1 {
   padding-left: 5%;
 }
 
+@media screen and (max-width: 800px) {
+  h1 {
+    color: #CFBB01;
+    font-family: 'DM Serif Display', serif;
+    justify-content: left;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: left;
+  } }
+
 h4 {
   color: white;
   font-size: 16px; 
@@ -157,15 +185,34 @@ li {
     justify-content: flex-end;
     height: 100px;
   }
+
+  @media screen and (max-width: 800px) {
+    .footer {
+      padding-right: 5px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100px;
+    } }
+
   .name {
     color: white;
   }
   
   .footer a {
     padding: 5px 5px;
+    font-size: 16px;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     text-decoration: none;
   }
+
+  @media screen and (max-width: 800px) {
+  .footer a {
+    padding: 5px 5px;
+    font-size: 14px;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  } }
  
   .gold {
     color: #CFBB01;
@@ -186,10 +233,4 @@ li {
     background-color:#CFBB01;
     color: #423D3C;
     transition: 0.2s;
-  }
-
-  @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
   }
