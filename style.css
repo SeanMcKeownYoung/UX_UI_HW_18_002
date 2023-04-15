@@ -58,32 +58,49 @@ body {
   display: grid;
   padding-top: 2%;
   padding-bottom: 5%;
-  grid-template-rows: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33% 33%;
   grid-template-columns: 1fr 1fr 1fr;
-  "Technical UXUI Portfo"
+  "UXUI Technical Portfo"
   ;
+}
+
+.UXUI {
+  grid-area: UXUI;
 }
 .Technical {
   grid-area: Technical;
 
 }
-.UXUI {
-  grid-area: UXUI;
-}
 .Portfo {
   grid-area: Portfo;
 }
   
-
-  
 .categoryGridArea {
-  background-position: left;
-  background-size: cover;
-  background-repeat: no-repeat;
   margin: 5px;
   cursor: pointer;
   display: grid;
   align-content: top;
+}
+
+#Technical {
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  cursor: pointer;
+  display: grid;
+  align-content: top;
+  padding-right: 100px;
+}
+
+#UXUI {
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: grid;
+  align-content: top;
+  padding-right: 70px;
 }
 
 .heading {
