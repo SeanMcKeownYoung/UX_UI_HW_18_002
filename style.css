@@ -1,0 +1,178 @@
+
+body {
+  background-color: #423D3C;
+ }
+
+/* Navigation */
+  .navBar {
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    margin: 0px 1%;
+    height: 50px;
+    width: 11.5%;
+    color: white;
+    font-family: Raleway, sans-serif;
+  }
+  .logonav {
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    height: 50px;
+    width: 11.5%;
+    color: white;
+    font-family: Raleway, sans-serif;
+  }
+  .navigation button {
+    background-color:transparent;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  button {
+    transition-duration: 0.4s;
+  }
+  
+  button:hover {
+    background-color:#CFBB01;
+    color: #423D3C;
+  }
+  body {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+  }
+
+/* Skills */
+
+.header {
+  text-align: left;
+  width: 100%;
+  margin: 50px auto;
+}
+
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  padding-top: 2%;
+  padding-bottom: 5%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-columns: 1fr 1fr 1fr;
+  "Technical UXUI Portfo"
+  ;
+}
+.Technical {
+  grid-area: Technical;
+
+}
+.UXUI {
+  grid-area: UXUI;
+}
+.Portfo {
+  grid-area: Portfo;
+}
+  
+
+  
+.categoryGridArea {
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: top;
+}
+
+.heading {
+  height: 25px;
+  color: #CFBB01;
+  font-size: 24px;
+  align-content: center;
+  padding-bottom: 15px;
+}
+
+h1 {
+  color: #CFBB01;
+  font-family: 'DM Serif Display', serif;
+  justify-content: left;
+  font-size: 100px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 5%;
+}
+
+h4 {
+  color: white;
+  font-size: 16px; 
+  font-weight: 300;
+}
+
+
+i {
+  font-size: 14px; 
+  font-weight: 100;
+}
+
+ul {
+  padding-left: 45px;
+}
+
+li {
+  color: white;
+  font-size: 18px; 
+  line-height: 200%;
+  text-overflow: balance;
+}
+
+
+
+
+
+/* Footer */
+
+  .footer {
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100px;
+  }
+  .name {
+    color: white;
+  }
+  
+  .footer a {
+    padding: 5px 5px;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+ 
+  .gold {
+    color: #CFBB01;
+  }
+  button {
+    background-color:#81807a;
+    border: none;
+    color: #080808;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+  }
+  
+  button:hover {
+    background-color:#CFBB01;
+    color: #423D3C;
+    transition: 0.2s;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
