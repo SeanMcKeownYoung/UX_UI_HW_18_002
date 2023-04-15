@@ -1,4 +1,3 @@
-
 body {
   background-color: #423D3C;
  }
@@ -53,7 +52,7 @@ body {
   margin: 50px auto;
 }
 
-@media screen and (max-width: 800px) 
+@media screen and (max-width: 1300px) 
   .header {
     text-align: left;
     width: 100%;
@@ -96,7 +95,7 @@ body {
   display: grid;
   align-content: top;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1300px) {
   .categoryGridArea {
     margin: 5px;
     cursor: pointer;
@@ -143,7 +142,7 @@ h1 {
   text-align: left;
   padding-left: 5%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1300px) {
   h1 {
     color: #CFBB01;
     font-family: 'DM Serif Display', serif;
@@ -225,7 +224,7 @@ li {
     height: 100px;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1300px) {
     .footer {
       padding-right: 5px;
       display: inline-flex;
@@ -245,7 +244,7 @@ li {
     text-decoration: none;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1300px) {
   .footer a {
     padding: 5px 5px;
     font-size: 14px;
