@@ -53,37 +53,77 @@ body {
   margin: 50px auto;
 }
 
+@media screen and (max-width: 800px) 
+  .header {
+    text-align: left;
+    width: 100%;
+    margin: 0px auto;
+  }
+
 #categoryGrid {
   margin: 0px 5%;
   display: grid;
-  padding-top: 2%;
   padding-bottom: 5%;
-  grid-template-rows: 33% 33% 33%;
-  grid-template-columns: 1fr 1fr 1fr;
-  "Technical UXUI Portfo"
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  "caseStudies Technical UXUI  Portfo"
   ;
 }
+@media screen and (max-width: 800px) {
+  #categoryGrid {
+    display: inline-block;
+  } }
+ 
+.caseStudies {
+    grid-area: caseStudies;
+     }
+
 .Technical {
   grid-area: Technical;
+   }
 
-}
 .UXUI {
   grid-area: UXUI;
 }
+
 .Portfo {
   grid-area: Portfo;
 }
   
-
-  
 .categoryGridArea {
-  background-position: left;
-  background-size: cover;
-  background-repeat: no-repeat;
   margin: 5px;
   cursor: pointer;
   display: grid;
   align-content: top;
+}
+@media screen and (max-width: 800px) {
+  .categoryGridArea {
+    margin: 5px;
+    cursor: pointer;
+    display: inline-block;
+    align-content: top;
+    padding-bottom: 20px;
+  } }
+
+#Technical {
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  cursor: pointer;
+  display: grid;
+  align-content: top;
+  padding-left: 30px;
+}
+
+#UXUI {
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: grid;
+  align-content: top;
+  padding-right: 70px;
 }
 
 .heading {
@@ -103,6 +143,50 @@ h1 {
   text-align: left;
   padding-left: 5%;
 }
+@media screen and (max-width: 800px) {
+  h1 {
+    color: #CFBB01;
+    font-family: 'DM Serif Display', serif;
+    justify-content: left;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: left;
+  } }
+
+
+
+  h2 {
+    background-color: transparent;
+    border: 2px solid  #CFBB01;
+    margin-left: 5%;
+    margin-top: 5%;
+    color:  #CFBB01;
+    width: 70%;
+    padding: 14px 25px;
+    font-size: 20px;
+    font-weight:400;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+  }
+  z {
+    font-weight:800;
+  }
+  h2:hover, h2:active {
+    background-color: #CFBB01;
+    color: #423D3C;
+  }
+
+  p {
+    color: white;
+    width: 80%;
+    font-size: 18px; 
+    line-height: 150%;
+    justify-content: left;
+    align-content: top;
+    font-weight:400;
+    padding-left: 5%;
+  }
 
 h4 {
   color: white;
@@ -110,11 +194,7 @@ h4 {
   font-weight: 300;
 }
 
-h5 {
-  color: white;
-  font-size: 14px; 
-  font-weight: 100;
-}
+
 i {
   font-size: 14px; 
   font-weight: 100;
@@ -128,6 +208,7 @@ li {
   color: white;
   font-size: 18px; 
   line-height: 200%;
+  text-overflow: balance;
 }
 
 
@@ -143,15 +224,34 @@ li {
     justify-content: flex-end;
     height: 100px;
   }
+
+  @media screen and (max-width: 800px) {
+    .footer {
+      padding-right: 5px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100px;
+    } }
+
   .name {
     color: white;
   }
   
   .footer a {
     padding: 5px 5px;
+    font-size: 16px;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     text-decoration: none;
   }
+
+  @media screen and (max-width: 800px) {
+  .footer a {
+    padding: 5px 5px;
+    font-size: 14px;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  } }
  
   .gold {
     color: #CFBB01;
